@@ -1,0 +1,59 @@
+{
+  "version": "0.2.0",
+  "notes": "Ranked selector registry template. Fill with stable selectors from your Catalyst environment.",
+  "strategy": {
+    "maxRetriesPerAction": 2,
+    "useFallbacks": true,
+    "allowExploratoryDiscovery": false
+  },
+  "selectors": {
+    "contentTree.collectionDropdown": {
+      "primary": "TODO_SELECTOR",
+      "fallbacks": [],
+      "controlType": "dropdown",
+      "scope": "contentTree",
+      "templates": ["all"],
+      "confidence": "medium"
+    },
+    "taskEditor.promptInput": {
+      "primary": "TODO_SELECTOR",
+      "fallbacks": ["TODO_FALLBACK_SELECTOR"],
+      "controlType": "text-input",
+      "scope": "taskEditor",
+      "templates": ["multiple-select", "gapfill", "categorization"],
+      "confidence": "high"
+    },
+    "taskEditor.saveButton": {
+      "primary": "TODO_SELECTOR",
+      "fallbacks": [],
+      "controlType": "button",
+      "scope": "activityEditor",
+      "templates": ["all"],
+      "confidence": "high"
+    },
+    "multipleSelect.answerTypeMultiple": {
+      "primary": "TODO_SELECTOR",
+      "fallbacks": [],
+      "controlType": "radio",
+      "scope": "taskEditor",
+      "templates": ["multiple-select"],
+      "confidence": "high"
+    },
+    "gapfill.addGapButton": {
+      "primary": "TODO_SELECTOR",
+      "fallbacks": [],
+      "controlType": "button",
+      "scope": "taskEditor",
+      "templates": ["gapfill"],
+      "confidence": "medium"
+    },
+    "categorization.addTargetButton": {
+      "primary": "TODO_SELECTOR",
+      "fallbacks": [],
+      "controlType": "button",
+      "scope": "taskEditor",
+      "templates": ["categorization"],
+      "confidence": "medium"
+    }
+  }
+}
