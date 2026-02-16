@@ -13,3 +13,6 @@ Automation next steps: [docs/automation-next-steps.md](docs/automation-next-step
 Selector optimization: [docs/selector-discovery-optimization.md](docs/selector-discovery-optimization.md)
 
 Baseline fast prompt: [docs/atlas-fast-run-prompt.md](docs/atlas-fast-run-prompt.md)
+
+Expanded unit payload (content expert draft): [examples/content-expert-unit-animals-beginner.json](examples/content-expert-unit-animals-beginner.json)
+Unit draft notes: [docs/content-expert-unit-notes.md](docs/content-expert-unit-notes.md)

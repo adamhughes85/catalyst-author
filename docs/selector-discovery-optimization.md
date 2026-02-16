@@ -44,6 +44,15 @@ The main value is not just having selectors, but using them in a **ranked regist
 }
 ```
 
+
+## Critical Catalyst interaction rules (must be explicit)
+1. **Sidebar operations use right-click context menus**
+   - In the content tree, creation/linking actions often appear only after right-clicking the node.
+   - Include explicit selector keys for: target node, right-click action, and context menu item click.
+2. **Multiple-select options require clicking `Add another`**
+   - Do not assume option rows appear automatically.
+   - Add explicit selector keys for: add-another button, option input row pattern, and correct-toggle pattern.
+
 ## Runtime strategy to reduce Atlas "thinking time"
 1. Preload only selectors needed for templates in current payload.
 2. For each field write:

@@ -8,4 +8,4 @@
 
 6. Convert discovery-mode output into the ranked registry format in `docs/selector-discovery-optimization.md` and keep it versioned.
 
-7. Use the fixed baseline fast prompt template in `docs/atlas-fast-run-prompt.md` and only swap payload path + run_id.
+7. Use the fixed baseline fast prompt template in `docs/atlas-fast-run-prompt.md` (explicitly says AGENT MODE / take actions now) and only swap payload path + run_id.

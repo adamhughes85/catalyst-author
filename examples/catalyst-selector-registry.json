@@ -12,15 +12,23 @@
       "fallbacks": [],
       "controlType": "dropdown",
       "scope": "contentTree",
-      "templates": ["all"],
+      "templates": [
+        "all"
+      ],
       "confidence": "medium"
     },
     "taskEditor.promptInput": {
       "primary": "TODO_SELECTOR",
-      "fallbacks": ["TODO_FALLBACK_SELECTOR"],
+      "fallbacks": [
+        "TODO_FALLBACK_SELECTOR"
+      ],
       "controlType": "text-input",
       "scope": "taskEditor",
-      "templates": ["multiple-select", "gapfill", "categorization"],
+      "templates": [
+        "multiple-select",
+        "gapfill",
+        "categorization"
+      ],
       "confidence": "high"
     },
     "taskEditor.saveButton": {
@@ -28,7 +36,9 @@
       "fallbacks": [],
       "controlType": "button",
       "scope": "activityEditor",
-      "templates": ["all"],
+      "templates": [
+        "all"
+      ],
       "confidence": "high"
     },
     "multipleSelect.answerTypeMultiple": {
@@ -36,7 +46,9 @@
       "fallbacks": [],
       "controlType": "radio",
       "scope": "taskEditor",
-      "templates": ["multiple-select"],
+      "templates": [
+        "multiple-select"
+      ],
       "confidence": "high"
     },
     "gapfill.addGapButton": {
@@ -44,7 +56,9 @@
       "fallbacks": [],
       "controlType": "button",
       "scope": "taskEditor",
-      "templates": ["gapfill"],
+      "templates": [
+        "gapfill"
+      ],
       "confidence": "medium"
     },
     "categorization.addTargetButton": {
@@ -52,7 +66,59 @@
       "fallbacks": [],
       "controlType": "button",
       "scope": "taskEditor",
-      "templates": ["categorization"],
+      "templates": [
+        "categorization"
+      ],
+      "confidence": "medium"
+    },
+    "contentTree.targetNodeForContextMenu": {
+      "primary": "TODO_SELECTOR",
+      "fallbacks": [],
+      "controlType": "tree-node",
+      "scope": "contentTree",
+      "templates": [
+        "all"
+      ],
+      "confidence": "medium"
+    },
+    "contentTree.contextMenuAddActivity": {
+      "primary": "TODO_SELECTOR",
+      "fallbacks": [],
+      "controlType": "context-menu-item",
+      "scope": "contentTree",
+      "templates": [
+        "all"
+      ],
+      "confidence": "medium"
+    },
+    "multipleSelect.addAnotherOptionButton": {
+      "primary": "TODO_SELECTOR",
+      "fallbacks": [],
+      "controlType": "button",
+      "scope": "taskEditor",
+      "templates": [
+        "multiple-select"
+      ],
+      "confidence": "high"
+    },
+    "multipleSelect.optionInputRowPattern": {
+      "primary": "TODO_SELECTOR_PATTERN",
+      "fallbacks": [],
+      "controlType": "text-input",
+      "scope": "taskEditor",
+      "templates": [
+        "multiple-select"
+      ],
+      "confidence": "medium"
+    },
+    "multipleSelect.optionCorrectTogglePattern": {
+      "primary": "TODO_SELECTOR_PATTERN",
+      "fallbacks": [],
+      "controlType": "radio",
+      "scope": "taskEditor",
+      "templates": [
+        "multiple-select"
+      ],
       "confidence": "medium"
     }
   }

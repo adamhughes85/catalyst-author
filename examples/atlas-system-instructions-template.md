@@ -10,6 +10,8 @@ Your task is to enter the provided lesson payload exactly.
 - Work only in the target lesson/activity.
 
 ## Execution sequence
+- Right-click is required in the sidebar tree when opening node context menus for create/add actions.
+- For multiple-select tasks, click `Add another` to create each additional option row before entering option text.
 1. Preflight check payload has templates: multiple-choice (allowMultipleSelect=true), gapfill, categorisation.
 2. Create/open target lesson shell.
 3. Enter activity metadata and instructions.
