@@ -19,3 +19,17 @@ Unit draft notes: [docs/content-expert-unit-notes.md](docs/content-expert-unit-n
 Single-file unit prompt: [docs/atlas-unit-authoring-single-file-prompt.md](docs/atlas-unit-authoring-single-file-prompt.md)
 
 Workflow mode: single-file unit authoring for Atlas content entry.
+
+## Project status summary
+
+After testing this approach, the current conclusion is:
+
+- This workflow can potentially help with simple assessment-style content entry.
+- It remains too operationally fragile and slow for broad interactive authoring in Catalyst.
+- It requires paid/available agent-mode capacity and is not currently easy for non-technical operators.
+- It often needs lesson-by-lesson execution due to session/context constraints.
+- Rich-media workflows (audio/image/video-heavy interactions) are not production-ready in this setup.
+
+### Decision
+
+Treat this repository as an experiment archive and reference implementation, not an active production path.
