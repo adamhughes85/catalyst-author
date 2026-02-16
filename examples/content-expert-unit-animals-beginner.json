@@ -1,0 +1,609 @@
+{
+  "unitId": "unit-animals-beginner-001",
+  "title": "Beginner Animals Unit (Rough Draft)",
+  "description": "Draft unit for Atlas content expert agent. Uses only multiple-select, gapfill, and categorization templates.",
+  "targetLocale": "en_US",
+  "instructionsLocale": "en_US",
+  "audience": "Beginner learners",
+  "lessons": [
+    {
+      "lessonId": "animals-lesson-1",
+      "title": "Meet Common Animals",
+      "lessonPlan": {
+        "availableInstructionsLocales": ["en_US"],
+        "description": "Learners identify common animals and basic categories.",
+        "id": "lp-animals-lesson-1",
+        "instructionsLocale": "en_US",
+        "shortDescription": "Common animals",
+        "title": "Lesson 1: Meet Common Animals",
+        "type": "self-study",
+        "targetLocale": "en_US",
+        "contentType": "with-steps",
+        "publishedVersion": 1,
+        "schemaVersion": 1,
+        "content": {
+          "sections": [],
+          "steps": [
+            {
+              "id": "l1-step-1",
+              "title": "Animal names",
+              "category": "language_vocabulary",
+              "activities": [
+                {
+                  "id": "l1-a1",
+                  "title": "Pick animals",
+                  "instructions": "Choose all words that are animals.",
+                  "stimuli": [],
+                  "taskDisplayType": "one-at-a-time",
+                  "skippable": false,
+                  "tags": [],
+                  "tasks": [
+                    {
+                      "id": "l1-ms-1",
+                      "prompt": "Which are animals?",
+                      "stimuli": [
+                        {
+                          "id": "l1-ms-stim-1",
+                          "type": "plain-text",
+                          "content": {"plainText": {"text": "Select all correct options."}}
+                        }
+                      ],
+                      "taskType": "multiple-choice",
+                      "feedbackScope": "task",
+                      "feedbackMode": "require-correct-answer",
+                      "feedbackMaxAttempts": 3,
+                      "submissionScope": "task",
+                      "task": {
+                        "multipleChoice": {
+                          "displayOptionsInline": false,
+                          "showSequenceNumbers": false,
+                          "randomiseResponseOptions": true,
+                          "allowMultipleSelect": true,
+                          "interactionType": "tap",
+                          "responseOptions": [
+                            {"id": "l1-ms-o1", "content": {"plainText": {"text": "cat"}}},
+                            {"id": "l1-ms-o2", "content": {"plainText": {"text": "dog"}}},
+                            {"id": "l1-ms-o3", "content": {"plainText": {"text": "chair"}}},
+                            {"id": "l1-ms-o4", "content": {"plainText": {"text": "bird"}}}
+                          ]
+                        }
+                      },
+                      "expectedResponse": {
+                        "taskId": "l1-ms-1",
+                        "type": "multiple-choice",
+                        "contents": {
+                          "multipleChoice": {
+                            "contents": {
+                              "l1-ms-o1": {"id": "l1-ms-o1", "userInput": "selected"},
+                              "l1-ms-o2": {"id": "l1-ms-o2", "userInput": "selected"},
+                              "l1-ms-o3": {"id": "l1-ms-o3", "userInput": "not-selected"},
+                              "l1-ms-o4": {"id": "l1-ms-o4", "userInput": "selected"}
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "tags": []
+            },
+            {
+              "id": "l1-step-2",
+              "title": "Simple sentence",
+              "category": "language_vocabulary",
+              "activities": [
+                {
+                  "id": "l1-a2",
+                  "title": "Gapfill sentence",
+                  "instructions": "Fill the gap with the best animal word.",
+                  "stimuli": [],
+                  "taskDisplayType": "one-at-a-time",
+                  "skippable": false,
+                  "tags": [],
+                  "tasks": [
+                    {
+                      "id": "l1-gf-1",
+                      "prompt": "Complete the sentence.",
+                      "stimuli": [
+                        {"id": "l1-gf-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Choose the best option."}}}
+                      ],
+                      "taskType": "gapfill",
+                      "feedbackScope": "task",
+                      "feedbackMode": "allow-n-attempts",
+                      "feedbackMaxAttempts": 2,
+                      "submissionScope": "task",
+                      "task": {
+                        "gapfill": {
+                          "sections": [
+                            {
+                              "sentence": [
+                                {"id": "l1-gf-p1", "gapType": "none", "stimulus": {"id": "l1-gf-t1", "type": "plain-text", "content": {"plainText": {"text": "A "}}}, "options": []},
+                                {"id": "l1-gf-gap1", "gapType": "selection", "options": [
+                                  {"id": "l1-gf-opt1", "type": "plain-text", "content": {"plainText": {"text": "cat"}}},
+                                  {"id": "l1-gf-opt2", "type": "plain-text", "content": {"plainText": {"text": "table"}}}
+                                ]},
+                                {"id": "l1-gf-p2", "gapType": "none", "stimulus": {"id": "l1-gf-t2", "type": "plain-text", "content": {"plainText": {"text": " is small."}}}, "options": []}
+                              ]
+                            }
+                          ],
+                          "commonOptions": []
+                        }
+                      },
+                      "expectedResponse": {"taskId": "l1-gf-1", "type": "gapfill", "contents": {"gapfill": {"l1-gf-gap1": {"id": "l1-gf-gap1", "userInput": "cat"}}}}
+                    }
+                  ]
+                }
+              ],
+              "tags": []
+            },
+            {
+              "id": "l1-step-3",
+              "title": "Animal groups",
+              "category": "language_vocabulary",
+              "activities": [
+                {
+                  "id": "l1-a3",
+                  "title": "Categorize animals",
+                  "instructions": "Put each animal in the right group.",
+                  "stimuli": [],
+                  "taskDisplayType": "one-at-a-time",
+                  "skippable": false,
+                  "tags": [],
+                  "tasks": [
+                    {
+                      "id": "l1-cat-1",
+                      "prompt": "Sort by type.",
+                      "stimuli": [{"id": "l1-cat-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Drag each option."}}}],
+                      "taskType": "categorisation",
+                      "feedbackScope": "task",
+                      "feedbackMode": "allow-n-attempts",
+                      "feedbackMaxAttempts": 2,
+                      "submissionScope": "task",
+                      "task": {
+                        "categorisation": {
+                          "randomOrder": true,
+                          "targets": [
+                            {"id": "l1-cat-t1", "content": {"plainText": {"text": "Pets"}}},
+                            {"id": "l1-cat-t2", "content": {"plainText": {"text": "Farm animals"}}}
+                          ],
+                          "options": [
+                            {"id": "l1-cat-o1", "content": {"plainText": {"text": "dog"}}},
+                            {"id": "l1-cat-o2", "content": {"plainText": {"text": "cow"}}}
+                          ]
+                        }
+                      },
+                      "expectedResponse": {"taskId": "l1-cat-1", "type": "categorisation", "contents": {"categorisation": {"l1-cat-o1": {"id": "l1-cat-o1", "userInput": "l1-cat-t1"}, "l1-cat-o2": {"id": "l1-cat-o2", "userInput": "l1-cat-t2"}}}}
+                    }
+                  ]
+                }
+              ],
+              "tags": []
+            }
+          ],
+          "activities": []
+        }
+      }
+    },
+    {
+      "lessonId": "animals-lesson-2",
+      "title": "Animal Colors and Sizes",
+      "lessonPlan": {
+        "availableInstructionsLocales": ["en_US"],
+        "description": "Learners describe animal colors and sizes.",
+        "id": "lp-animals-lesson-2",
+        "instructionsLocale": "en_US",
+        "shortDescription": "Colors and sizes",
+        "title": "Lesson 2: Animal Colors and Sizes",
+        "type": "self-study",
+        "targetLocale": "en_US",
+        "contentType": "with-steps",
+        "publishedVersion": 1,
+        "schemaVersion": 1,
+        "content": {
+          "sections": [],
+          "steps": [
+            {
+              "id": "l2-step-1",
+              "title": "Color words",
+              "category": "language_vocabulary",
+              "activities": [{
+                "id": "l2-a1",
+                "title": "Select color facts",
+                "instructions": "Choose all true statements.",
+                "stimuli": [],
+                "taskDisplayType": "one-at-a-time",
+                "skippable": false,
+                "tags": [],
+                "tasks": [{
+                  "id": "l2-ms-1",
+                  "prompt": "Which can describe a zebra?",
+                  "stimuli": [{"id": "l2-ms-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Select all that fit."}}}],
+                  "taskType": "multiple-choice",
+                  "feedbackScope": "task",
+                  "feedbackMode": "require-correct-answer",
+                  "feedbackMaxAttempts": 3,
+                  "submissionScope": "task",
+                  "task": {"multipleChoice": {
+                    "displayOptionsInline": false,
+                    "showSequenceNumbers": false,
+                    "randomiseResponseOptions": true,
+                    "allowMultipleSelect": true,
+                    "interactionType": "tap",
+                    "responseOptions": [
+                      {"id": "l2-ms-o1", "content": {"plainText": {"text": "black and white"}}},
+                      {"id": "l2-ms-o2", "content": {"plainText": {"text": "striped"}}},
+                      {"id": "l2-ms-o3", "content": {"plainText": {"text": "purple"}}},
+                      {"id": "l2-ms-o4", "content": {"plainText": {"text": "small insect"}}}
+                    ]
+                  }},
+                  "expectedResponse": {"taskId": "l2-ms-1", "type": "multiple-choice", "contents": {"multipleChoice": {"contents": {
+                    "l2-ms-o1": {"id": "l2-ms-o1", "userInput": "selected"},
+                    "l2-ms-o2": {"id": "l2-ms-o2", "userInput": "selected"},
+                    "l2-ms-o3": {"id": "l2-ms-o3", "userInput": "not-selected"},
+                    "l2-ms-o4": {"id": "l2-ms-o4", "userInput": "not-selected"}
+                  }}}}
+                }]
+              }],
+              "tags": []
+            },
+            {
+              "id": "l2-step-2",
+              "title": "Size sentence",
+              "category": "language_vocabulary",
+              "activities": [{
+                "id": "l2-a2",
+                "title": "Gapfill size",
+                "instructions": "Fill the gap with the best word.",
+                "stimuli": [],
+                "taskDisplayType": "one-at-a-time",
+                "skippable": false,
+                "tags": [],
+                "tasks": [{
+                  "id": "l2-gf-1",
+                  "prompt": "Complete the sentence.",
+                  "stimuli": [{"id": "l2-gf-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Use one option."}}}],
+                  "taskType": "gapfill",
+                  "feedbackScope": "task",
+                  "feedbackMode": "allow-n-attempts",
+                  "feedbackMaxAttempts": 2,
+                  "submissionScope": "task",
+                  "task": {"gapfill": {"sections": [{"sentence": [
+                    {"id": "l2-gf-p1", "gapType": "none", "stimulus": {"id": "l2-gf-t1", "type": "plain-text", "content": {"plainText": {"text": "An elephant is "}}}, "options": []},
+                    {"id": "l2-gf-gap1", "gapType": "selection", "options": [
+                      {"id": "l2-gf-opt1", "type": "plain-text", "content": {"plainText": {"text": "big"}}},
+                      {"id": "l2-gf-opt2", "type": "plain-text", "content": {"plainText": {"text": "tiny"}}}
+                    ]}
+                  ]}], "commonOptions": []}},
+                  "expectedResponse": {"taskId": "l2-gf-1", "type": "gapfill", "contents": {"gapfill": {"l2-gf-gap1": {"id": "l2-gf-gap1", "userInput": "big"}}}}
+                }]
+              }],
+              "tags": []
+            },
+            {
+              "id": "l2-step-3",
+              "title": "Group by size",
+              "category": "language_vocabulary",
+              "activities": [{
+                "id": "l2-a3",
+                "title": "Categorize by size",
+                "instructions": "Sort animals by size.",
+                "stimuli": [],
+                "taskDisplayType": "one-at-a-time",
+                "skippable": false,
+                "tags": [],
+                "tasks": [{
+                  "id": "l2-cat-1",
+                  "prompt": "Sort each animal.",
+                  "stimuli": [{"id": "l2-cat-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Drag and drop."}}}],
+                  "taskType": "categorisation",
+                  "feedbackScope": "task",
+                  "feedbackMode": "allow-n-attempts",
+                  "feedbackMaxAttempts": 2,
+                  "submissionScope": "task",
+                  "task": {"categorisation": {
+                    "randomOrder": true,
+                    "targets": [
+                      {"id": "l2-cat-t1", "content": {"plainText": {"text": "Big animals"}}},
+                      {"id": "l2-cat-t2", "content": {"plainText": {"text": "Small animals"}}}
+                    ],
+                    "options": [
+                      {"id": "l2-cat-o1", "content": {"plainText": {"text": "elephant"}}},
+                      {"id": "l2-cat-o2", "content": {"plainText": {"text": "mouse"}}}
+                    ]
+                  }},
+                  "expectedResponse": {"taskId": "l2-cat-1", "type": "categorisation", "contents": {"categorisation": {
+                    "l2-cat-o1": {"id": "l2-cat-o1", "userInput": "l2-cat-t1"},
+                    "l2-cat-o2": {"id": "l2-cat-o2", "userInput": "l2-cat-t2"}
+                  }}}
+                }]
+              }],
+              "tags": []
+            }
+          ],
+          "activities": []
+        }
+      }
+    },
+    {
+      "lessonId": "animals-lesson-3",
+      "title": "Animal Homes and Food",
+      "lessonPlan": {
+        "availableInstructionsLocales": ["en_US"],
+        "description": "Learners connect animals with homes and food.",
+        "id": "lp-animals-lesson-3",
+        "instructionsLocale": "en_US",
+        "shortDescription": "Homes and food",
+        "title": "Lesson 3: Animal Homes and Food",
+        "type": "self-study",
+        "targetLocale": "en_US",
+        "contentType": "with-steps",
+        "publishedVersion": 1,
+        "schemaVersion": 1,
+        "content": {
+          "sections": [],
+          "steps": [
+            {
+              "id": "l3-step-1",
+              "title": "Where they live",
+              "category": "language_vocabulary",
+              "activities": [{
+                "id": "l3-a1",
+                "title": "Select home facts",
+                "instructions": "Choose all true options.",
+                "stimuli": [],
+                "taskDisplayType": "one-at-a-time",
+                "skippable": false,
+                "tags": [],
+                "tasks": [{
+                  "id": "l3-ms-1",
+                  "prompt": "Which homes can animals live in?",
+                  "stimuli": [{"id": "l3-ms-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Select all correct."}}}],
+                  "taskType": "multiple-choice",
+                  "feedbackScope": "task",
+                  "feedbackMode": "require-correct-answer",
+                  "feedbackMaxAttempts": 3,
+                  "submissionScope": "task",
+                  "task": {"multipleChoice": {
+                    "displayOptionsInline": false,
+                    "showSequenceNumbers": false,
+                    "randomiseResponseOptions": true,
+                    "allowMultipleSelect": true,
+                    "interactionType": "tap",
+                    "responseOptions": [
+                      {"id": "l3-ms-o1", "content": {"plainText": {"text": "nest"}}},
+                      {"id": "l3-ms-o2", "content": {"plainText": {"text": "den"}}},
+                      {"id": "l3-ms-o3", "content": {"plainText": {"text": "bus stop"}}},
+                      {"id": "l3-ms-o4", "content": {"plainText": {"text": "cage"}}}
+                    ]
+                  }},
+                  "expectedResponse": {"taskId": "l3-ms-1", "type": "multiple-choice", "contents": {"multipleChoice": {"contents": {
+                    "l3-ms-o1": {"id": "l3-ms-o1", "userInput": "selected"},
+                    "l3-ms-o2": {"id": "l3-ms-o2", "userInput": "selected"},
+                    "l3-ms-o3": {"id": "l3-ms-o3", "userInput": "not-selected"},
+                    "l3-ms-o4": {"id": "l3-ms-o4", "userInput": "selected"}
+                  }}}}
+                }]
+              }],
+              "tags": []
+            },
+            {
+              "id": "l3-step-2",
+              "title": "Food sentence",
+              "category": "language_vocabulary",
+              "activities": [{
+                "id": "l3-a2",
+                "title": "Gapfill food",
+                "instructions": "Fill in the blank.",
+                "stimuli": [],
+                "taskDisplayType": "one-at-a-time",
+                "skippable": false,
+                "tags": [],
+                "tasks": [{
+                  "id": "l3-gf-1",
+                  "prompt": "Complete the sentence.",
+                  "stimuli": [{"id": "l3-gf-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Pick one option."}}}],
+                  "taskType": "gapfill",
+                  "feedbackScope": "task",
+                  "feedbackMode": "allow-n-attempts",
+                  "feedbackMaxAttempts": 2,
+                  "submissionScope": "task",
+                  "task": {"gapfill": {"sections": [{"sentence": [
+                    {"id": "l3-gf-p1", "gapType": "none", "stimulus": {"id": "l3-gf-t1", "type": "plain-text", "content": {"plainText": {"text": "A rabbit eats "}}}, "options": []},
+                    {"id": "l3-gf-gap1", "gapType": "selection", "options": [
+                      {"id": "l3-gf-opt1", "type": "plain-text", "content": {"plainText": {"text": "carrots"}}},
+                      {"id": "l3-gf-opt2", "type": "plain-text", "content": {"plainText": {"text": "stones"}}}
+                    ]}
+                  ]}], "commonOptions": []}},
+                  "expectedResponse": {"taskId": "l3-gf-1", "type": "gapfill", "contents": {"gapfill": {"l3-gf-gap1": {"id": "l3-gf-gap1", "userInput": "carrots"}}}}
+                }]
+              }],
+              "tags": []
+            },
+            {
+              "id": "l3-step-3",
+              "title": "Food type sorting",
+              "category": "language_vocabulary",
+              "activities": [{
+                "id": "l3-a3",
+                "title": "Categorize by food",
+                "instructions": "Sort each animal by what it eats.",
+                "stimuli": [],
+                "taskDisplayType": "one-at-a-time",
+                "skippable": false,
+                "tags": [],
+                "tasks": [{
+                  "id": "l3-cat-1",
+                  "prompt": "Sort into food groups.",
+                  "stimuli": [{"id": "l3-cat-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Drag each item."}}}],
+                  "taskType": "categorisation",
+                  "feedbackScope": "task",
+                  "feedbackMode": "allow-n-attempts",
+                  "feedbackMaxAttempts": 2,
+                  "submissionScope": "task",
+                  "task": {"categorisation": {
+                    "randomOrder": true,
+                    "targets": [
+                      {"id": "l3-cat-t1", "content": {"plainText": {"text": "Plant eaters"}}},
+                      {"id": "l3-cat-t2", "content": {"plainText": {"text": "Meat eaters"}}}
+                    ],
+                    "options": [
+                      {"id": "l3-cat-o1", "content": {"plainText": {"text": "rabbit"}}},
+                      {"id": "l3-cat-o2", "content": {"plainText": {"text": "lion"}}}
+                    ]
+                  }},
+                  "expectedResponse": {"taskId": "l3-cat-1", "type": "categorisation", "contents": {"categorisation": {
+                    "l3-cat-o1": {"id": "l3-cat-o1", "userInput": "l3-cat-t1"},
+                    "l3-cat-o2": {"id": "l3-cat-o2", "userInput": "l3-cat-t2"}
+                  }}}
+                }]
+              }],
+              "tags": []
+            }
+          ],
+          "activities": []
+        }
+      }
+    },
+    {
+      "lessonId": "animals-lesson-4",
+      "title": "Review: Animals Around Us",
+      "lessonPlan": {
+        "availableInstructionsLocales": ["en_US"],
+        "description": "Unit review with mixed beginner animal vocabulary tasks.",
+        "id": "lp-animals-lesson-4",
+        "instructionsLocale": "en_US",
+        "shortDescription": "Unit review",
+        "title": "Lesson 4: Animals Around Us",
+        "type": "self-study",
+        "targetLocale": "en_US",
+        "contentType": "with-steps",
+        "publishedVersion": 1,
+        "schemaVersion": 1,
+        "content": {
+          "sections": [],
+          "steps": [
+            {
+              "id": "l4-step-1",
+              "title": "Quick animal check",
+              "category": "language_vocabulary",
+              "activities": [{
+                "id": "l4-a1",
+                "title": "Multiple select review",
+                "instructions": "Choose all animal words.",
+                "stimuli": [],
+                "taskDisplayType": "one-at-a-time",
+                "skippable": false,
+                "tags": [],
+                "tasks": [{
+                  "id": "l4-ms-1",
+                  "prompt": "Which are animals?",
+                  "stimuli": [{"id": "l4-ms-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Select all correct options."}}}],
+                  "taskType": "multiple-choice",
+                  "feedbackScope": "task",
+                  "feedbackMode": "require-correct-answer",
+                  "feedbackMaxAttempts": 3,
+                  "submissionScope": "task",
+                  "task": {"multipleChoice": {
+                    "displayOptionsInline": false,
+                    "showSequenceNumbers": false,
+                    "randomiseResponseOptions": true,
+                    "allowMultipleSelect": true,
+                    "interactionType": "tap",
+                    "responseOptions": [
+                      {"id": "l4-ms-o1", "content": {"plainText": {"text": "fish"}}},
+                      {"id": "l4-ms-o2", "content": {"plainText": {"text": "frog"}}},
+                      {"id": "l4-ms-o3", "content": {"plainText": {"text": "window"}}},
+                      {"id": "l4-ms-o4", "content": {"plainText": {"text": "horse"}}}
+                    ]
+                  }},
+                  "expectedResponse": {"taskId": "l4-ms-1", "type": "multiple-choice", "contents": {"multipleChoice": {"contents": {
+                    "l4-ms-o1": {"id": "l4-ms-o1", "userInput": "selected"},
+                    "l4-ms-o2": {"id": "l4-ms-o2", "userInput": "selected"},
+                    "l4-ms-o3": {"id": "l4-ms-o3", "userInput": "not-selected"},
+                    "l4-ms-o4": {"id": "l4-ms-o4", "userInput": "selected"}
+                  }}}}
+                }]
+              }],
+              "tags": []
+            },
+            {
+              "id": "l4-step-2",
+              "title": "Simple review sentence",
+              "category": "language_vocabulary",
+              "activities": [{
+                "id": "l4-a2",
+                "title": "Gapfill review",
+                "instructions": "Fill the blank with the best word.",
+                "stimuli": [],
+                "taskDisplayType": "one-at-a-time",
+                "skippable": false,
+                "tags": [],
+                "tasks": [{
+                  "id": "l4-gf-1",
+                  "prompt": "Complete the sentence.",
+                  "stimuli": [{"id": "l4-gf-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Pick one option."}}}],
+                  "taskType": "gapfill",
+                  "feedbackScope": "task",
+                  "feedbackMode": "allow-n-attempts",
+                  "feedbackMaxAttempts": 2,
+                  "submissionScope": "task",
+                  "task": {"gapfill": {"sections": [{"sentence": [
+                    {"id": "l4-gf-p1", "gapType": "none", "stimulus": {"id": "l4-gf-t1", "type": "plain-text", "content": {"plainText": {"text": "A bird can "}}}, "options": []},
+                    {"id": "l4-gf-gap1", "gapType": "selection", "options": [
+                      {"id": "l4-gf-opt1", "type": "plain-text", "content": {"plainText": {"text": "fly"}}},
+                      {"id": "l4-gf-opt2", "type": "plain-text", "content": {"plainText": {"text": "swim in sand"}}}
+                    ]}
+                  ]}], "commonOptions": []}},
+                  "expectedResponse": {"taskId": "l4-gf-1", "type": "gapfill", "contents": {"gapfill": {"l4-gf-gap1": {"id": "l4-gf-gap1", "userInput": "fly"}}}}
+                }]
+              }],
+              "tags": []
+            },
+            {
+              "id": "l4-step-3",
+              "title": "Final sorting",
+              "category": "language_vocabulary",
+              "activities": [{
+                "id": "l4-a3",
+                "title": "Categorization review",
+                "instructions": "Sort each option into animal or not animal.",
+                "stimuli": [],
+                "taskDisplayType": "one-at-a-time",
+                "skippable": false,
+                "tags": [],
+                "tasks": [{
+                  "id": "l4-cat-1",
+                  "prompt": "Sort each item.",
+                  "stimuli": [{"id": "l4-cat-stim-1", "type": "plain-text", "content": {"plainText": {"text": "Drag and drop each item."}}}],
+                  "taskType": "categorisation",
+                  "feedbackScope": "task",
+                  "feedbackMode": "allow-n-attempts",
+                  "feedbackMaxAttempts": 2,
+                  "submissionScope": "task",
+                  "task": {"categorisation": {
+                    "randomOrder": true,
+                    "targets": [
+                      {"id": "l4-cat-t1", "content": {"plainText": {"text": "Animals"}}},
+                      {"id": "l4-cat-t2", "content": {"plainText": {"text": "Not animals"}}}
+                    ],
+                    "options": [
+                      {"id": "l4-cat-o1", "content": {"plainText": {"text": "turtle"}}},
+                      {"id": "l4-cat-o2", "content": {"plainText": {"text": "table"}}}
+                    ]
+                  }},
+                  "expectedResponse": {"taskId": "l4-cat-1", "type": "categorisation", "contents": {"categorisation": {
+                    "l4-cat-o1": {"id": "l4-cat-o1", "userInput": "l4-cat-t1"},
+                    "l4-cat-o2": {"id": "l4-cat-o2", "userInput": "l4-cat-t2"}
+                  }}}
+                }]
+              }],
+              "tags": []
+            }
+          ],
+          "activities": []
+        }
+      }
+    }
+  ]
+}
