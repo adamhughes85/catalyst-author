@@ -1,0 +1,299 @@
+{
+  "availableInstructionsLocales": ["en_US"],
+  "description": "Second-pass pilot lesson for faster Atlas-driven Catalyst authoring.",
+  "id": "lp-pilot-002",
+  "instructionsLocale": "en_US",
+  "shortDescription": "Transit and sorting practice using three MVP templates.",
+  "title": "Pilot: Transit and Sorting",
+  "type": "self-study",
+  "targetLocale": "en_US",
+  "contentType": "with-steps",
+  "publishedVersion": 1,
+  "schemaVersion": 1,
+  "content": {
+    "sections": [],
+    "steps": [
+      {
+        "id": "step-1",
+        "title": "Core practice",
+        "category": "language_vocabulary",
+        "activities": [
+          {
+            "id": "activity-1",
+            "title": "Commuting and categories",
+            "instructions": "Complete each task and check your answers.",
+            "stimuli": [],
+            "taskDisplayType": "one-at-a-time",
+            "skippable": false,
+            "tags": [],
+            "tasks": [
+              {
+                "id": "task-ms-2",
+                "prompt": "Which transport options usually run on rails?",
+                "stimuli": [
+                  {
+                    "id": "stim-ms-2",
+                    "type": "plain-text",
+                    "content": {
+                      "plainText": {
+                        "text": "Select all correct options."
+                      }
+                    }
+                  }
+                ],
+                "taskType": "multiple-choice",
+                "feedbackScope": "task",
+                "feedbackMode": "require-correct-answer",
+                "feedbackMaxAttempts": 3,
+                "submissionScope": "task",
+                "task": {
+                  "multipleChoice": {
+                    "displayOptionsInline": false,
+                    "showSequenceNumbers": false,
+                    "randomiseResponseOptions": true,
+                    "allowMultipleSelect": true,
+                    "interactionType": "tap",
+                    "responseOptions": [
+                      {
+                        "id": "ms2-opt-1",
+                        "content": {
+                          "plainText": {
+                            "text": "train"
+                          }
+                        }
+                      },
+                      {
+                        "id": "ms2-opt-2",
+                        "content": {
+                          "plainText": {
+                            "text": "bus"
+                          }
+                        }
+                      },
+                      {
+                        "id": "ms2-opt-3",
+                        "content": {
+                          "plainText": {
+                            "text": "tram"
+                          }
+                        }
+                      },
+                      {
+                        "id": "ms2-opt-4",
+                        "content": {
+                          "plainText": {
+                            "text": "bicycle"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "expectedResponse": {
+                  "taskId": "task-ms-2",
+                  "type": "multiple-choice",
+                  "contents": {
+                    "multipleChoice": {
+                      "contents": {
+                        "ms2-opt-1": {
+                          "id": "ms2-opt-1",
+                          "userInput": "selected"
+                        },
+                        "ms2-opt-2": {
+                          "id": "ms2-opt-2",
+                          "userInput": "not-selected"
+                        },
+                        "ms2-opt-3": {
+                          "id": "ms2-opt-3",
+                          "userInput": "selected"
+                        },
+                        "ms2-opt-4": {
+                          "id": "ms2-opt-4",
+                          "userInput": "not-selected"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": "task-gf-2",
+                "prompt": "Fill in the missing words.",
+                "stimuli": [
+                  {
+                    "id": "stim-gf-2",
+                    "type": "plain-text",
+                    "content": {
+                      "plainText": {
+                        "text": "Choose the best option for each gap."
+                      }
+                    }
+                  }
+                ],
+                "taskType": "gapfill",
+                "feedbackScope": "task",
+                "feedbackMode": "allow-n-attempts",
+                "feedbackMaxAttempts": 2,
+                "submissionScope": "task",
+                "task": {
+                  "gapfill": {
+                    "sections": [
+                      {
+                        "sentence": [
+                          {
+                            "id": "gf2-part-1",
+                            "gapType": "none",
+                            "stimulus": {
+                              "id": "gf2-text-1",
+                              "type": "plain-text",
+                              "content": {
+                                "plainText": {
+                                  "text": "I catch the "
+                                }
+                              }
+                            },
+                            "options": []
+                          },
+                          {
+                            "id": "gf2-gap-1",
+                            "gapType": "selection",
+                            "options": [
+                              {
+                                "id": "gf2-opt-1",
+                                "type": "plain-text",
+                                "content": {
+                                  "plainText": {
+                                    "text": "tram"
+                                  }
+                                }
+                              },
+                              {
+                                "id": "gf2-opt-2",
+                                "type": "plain-text",
+                                "content": {
+                                  "plainText": {
+                                    "text": "kitchen"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "id": "gf2-part-2",
+                            "gapType": "none",
+                            "stimulus": {
+                              "id": "gf2-text-2",
+                              "type": "plain-text",
+                              "content": {
+                                "plainText": {
+                                  "text": " to work each morning."
+                                }
+                              }
+                            },
+                            "options": []
+                          }
+                        ]
+                      }
+                    ],
+                    "commonOptions": []
+                  }
+                },
+                "expectedResponse": {
+                  "taskId": "task-gf-2",
+                  "type": "gapfill",
+                  "contents": {
+                    "gapfill": {
+                      "gf2-gap-1": {
+                        "id": "gf2-gap-1",
+                        "userInput": "tram"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": "task-cat-2",
+                "prompt": "Sort each item into the correct category.",
+                "stimuli": [
+                  {
+                    "id": "stim-cat-2",
+                    "type": "plain-text",
+                    "content": {
+                      "plainText": {
+                        "text": "Drag each option to the correct category."
+                      }
+                    }
+                  }
+                ],
+                "taskType": "categorisation",
+                "feedbackScope": "task",
+                "feedbackMode": "allow-n-attempts",
+                "feedbackMaxAttempts": 2,
+                "submissionScope": "task",
+                "task": {
+                  "categorisation": {
+                    "randomOrder": true,
+                    "targets": [
+                      {
+                        "id": "cat2-target-fruit",
+                        "content": {
+                          "plainText": {
+                            "text": "Fruit"
+                          }
+                        }
+                      },
+                      {
+                        "id": "cat2-target-vehicle",
+                        "content": {
+                          "plainText": {
+                            "text": "Vehicle"
+                          }
+                        }
+                      }
+                    ],
+                    "options": [
+                      {
+                        "id": "cat2-opt-apple",
+                        "content": {
+                          "plainText": {
+                            "text": "Apple"
+                          }
+                        }
+                      },
+                      {
+                        "id": "cat2-opt-train",
+                        "content": {
+                          "plainText": {
+                            "text": "Train"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "expectedResponse": {
+                  "taskId": "task-cat-2",
+                  "type": "categorisation",
+                  "contents": {
+                    "categorisation": {
+                      "cat2-opt-apple": {
+                        "id": "cat2-opt-apple",
+                        "userInput": "cat2-target-fruit"
+                      },
+                      "cat2-opt-train": {
+                        "id": "cat2-opt-train",
+                        "userInput": "cat2-target-vehicle"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "activities": []
+  }
+}
