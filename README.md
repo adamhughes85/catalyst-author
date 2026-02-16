@@ -16,3 +16,6 @@ Baseline fast prompt: [docs/atlas-fast-run-prompt.md](docs/atlas-fast-run-prompt
 
 Expanded unit payload (content expert draft): [examples/content-expert-unit-animals-beginner.json](examples/content-expert-unit-animals-beginner.json)
 Unit draft notes: [docs/content-expert-unit-notes.md](docs/content-expert-unit-notes.md)
+Single-file unit prompt: [docs/atlas-unit-authoring-single-file-prompt.md](docs/atlas-unit-authoring-single-file-prompt.md)
+
+Workflow mode: single-file unit authoring for Atlas content entry.
